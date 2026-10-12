@@ -14,7 +14,7 @@ Fill in the blanks in the code below so the program outputs "Coding is Cool" to 
 using namespace std;
 
 int main() {
-     _____ << _____ << endl;
+     cout << "coding is cool" << endl;
 }
 ```
 &nbsp;
@@ -30,13 +30,13 @@ Add the correct data types to the code below to complete the variables.
 using namespace std;
 
 int main() {
-    firstNumber = 1;
-    iCanCode = true;
-    hopefulGrade = 'a';
-    myDecimal = 1.0;
-    minimalSentance = "y";
-    keyMash = 13213123;
-    mysteryDataType = 5.6f; //Use Google to work this out
+    int firstNumber = 1;
+    bool iCanCode = true;
+    char hopefulGrade = 'a';
+    double myDecimal = 1.0;
+    char minimalSentance = "y";
+    int keyMash = 13213123;
+    float mysteryDataType = 5.6f; //Use Google to work this out
 
     return 0;
 }
@@ -54,17 +54,14 @@ Tidy up the following code to make it neater and easier to read.
 using namespace std;
 
 int main(){
-    cout << "This is untidy code.";
+    cout << "This is untidy code." <<endl;
+    cout <<  "I'm surprised it works." <<endl;
 
-    cout <<                     "I'm surprised it works.";
-
-int   number =   6;
+    int   number =   6;
     cout << "It has" <<
-        number <<  "lines of code  - "     ;
-
-
-    cout << "each more hideous than the last.      ";
-                cout << "You probably should add some line breaks in the text too" << endl;
+    number << "lines of code  - "  <<endl;
+    cout << "each more hideous than the last." <<endl;
+    cout << "You probably should add some line breaks in the text too" << endl;
 
     return 0;
 
