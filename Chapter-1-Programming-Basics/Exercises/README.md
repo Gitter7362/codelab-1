@@ -86,7 +86,11 @@ The idea here is to translate the following famous riddle to C++. Each number in
 int main(){
     int num1 = 1;
     int num2 = 7;
-    cout << "as i was going to St. Ives
+    cout << "as i was going to St. Ives, I met " << num1 << "man with " << num2 << "wives" <<endl;
+    cout << "each wife had" << num2 << "sacks, each sack had " << num2 << " cats, each cat had " << num2 << "kits, cats, sacks wives," <<endl;
+    cout << "how many were going to St. Ives? " <<endl;
+
+    return 0;
 }
 
 
@@ -104,6 +108,11 @@ Total Kits = 7 (wives) x 7 (sacks) x 7 (cats) x 7 (kits)
 ```
 
 You will have to write similar mathematical expressions to find the total number of ‘items’ met while to St. Ives.
+
+int main(){
+    
+
+}
 
 &nbsp;
 &nbsp;
