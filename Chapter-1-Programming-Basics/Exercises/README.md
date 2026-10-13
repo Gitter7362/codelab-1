@@ -83,6 +83,13 @@ The idea here is to translate the following famous riddle to C++. Each number in
 >Kits, cats, sacks and wives,  
 >How many were going to St. Ives?*
 
+int main(){
+    int num1 = 1;
+    int num2 = 7;
+    cout << "as i was going to St. Ives
+}
+
+
 
 #### Part 2
 
