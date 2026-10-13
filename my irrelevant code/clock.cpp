@@ -10,11 +10,11 @@ int main(){
 
     if (time < 12.00){
         cout << "good morning" <<endl;
-    }else if (12.00 <= time < 18.00){
+    }else if (12.00 <= time && time < 18.00){
         cout << "good afternoon" <<endl;
-    }else if (18.00 <= time < 21.00){
+    }else if (18.00 <= time && time < 21.00){
         cout << "good evening" <<endl;
-    }else if (21.00 <= time < 24.00){
+    }else if (21.00 <= time && time < 24.00){
         cout << "good night" <<endl; //all the if else statements 
     }else{
         cout << "that is not a vlalid input" <<endl;
