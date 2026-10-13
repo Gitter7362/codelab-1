@@ -5,10 +5,11 @@ using namespace std;
 int main(){
     float hours;
     double cost = 2.40;
-    cout << "how long have you parked for? " <<endl;
+    char pound = 156;
+    cout << "How long have you parked for? " <<endl;
     cin >> hours;
 
     double totalCost = cost * hours;
-    cout << "the total cost of your visit is £" << totalCost <<endl;
+    cout << "The total cost of your visit is " << pound << totalCost <<endl;
 
 }
