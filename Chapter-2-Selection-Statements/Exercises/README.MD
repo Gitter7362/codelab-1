@@ -18,13 +18,13 @@ ________________
 ________________
 
 int main() {
-    _________ //declare and initialise variable to store age
-    if(________){ //check if age is greater than or equal to 18
-        _______________ //output can vote message
+    int age; //declare and initialise variable to store age
+    if( age >= 18){ //check if age is greater than or equal to 18
+        cout << "you are able to vote" <<endl; //output can vote message
     }else{ //else block if above condition is false (e.g. age under 18)
-        ______________ //output can vote message
+        cout << "you are not able to vote" <<endl; //output can vote message
     }
-    ________
+    return 0;
 }
 ```
 
