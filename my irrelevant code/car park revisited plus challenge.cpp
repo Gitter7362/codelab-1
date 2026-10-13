@@ -17,9 +17,9 @@ int main(){
     cin >> timeLeft;
     hoursParked = timeLeft - timeArrived;
 
-    if (timeArrived >= 18){
+    if (timeArrived >= 18.00){
         totalCost = aftCost * hoursParked;
-    }else{
+    }else if (timeArrived - ){
         totalCost = befCost * hoursParked;        
     }
     cout << "the total cost of you visit is: " << pound << totalCost <<endl;
