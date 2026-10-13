@@ -16,6 +16,8 @@ int main(){
         cout << "good evening" <<endl;
     }else if (21.00 <= time < 24.00){
         cout << "good night" <<endl; //all the if else statements 
+    }else{
+        cout << "that is not a vlalid input" <<endl;
     }
     
     return 0;
