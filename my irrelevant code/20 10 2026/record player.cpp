@@ -20,6 +20,9 @@ int main(){
         case 4:
             cout << "you chose ABBA";
             break;
+        default:
+            cout << "not a valid input";
+            break;
     }
     return 0;
 }
