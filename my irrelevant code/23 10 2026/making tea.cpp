@@ -6,21 +6,21 @@ int main(){
     bool milk = false;
     bool sugar = false;
     int choice1;
-    int choice2;
     string altMilk;
     string sugarType;
 
 
-    cout << "would you like milk in the tea? 1: yes, 2: no" <<endl;
+    cout << "1: with sugar and milk\n2: milk no sugar\n3: no milk sugar\n4: no milk no sugar" <<endl;
     cin >> choice1;
-    cout << "any sugar? 3: yes 4: no" <<endl;
-    cin >> choice2;
 
-    switch (choice1, choice2){
+    switch (choice1){
     case1:
         bool milk = true;
+        bool sugar = true;
         break;
     case2:
+        bool milk = true;
+        break;
     case3:
         bool sugar = true;
         break;
@@ -34,7 +34,7 @@ int main(){
         cout << "what type of sugar would you like to use?" <<endl;
         cin >> sugarType;
     }
-    
+
     if (milk == true && sugar == true){
         cout << "your tea will include " << altMilk << " milk and " << sugarType << "sugar" <<endl;
     }else if (milk == true && sugar == false){
