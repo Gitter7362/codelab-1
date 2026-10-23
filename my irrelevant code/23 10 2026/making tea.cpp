@@ -34,6 +34,7 @@ int main(){
         cout << "what type of sugar would you like to use?" <<endl;
         cin >> sugarType;
     }
+    
     if (milk == true && sugar == true){
         cout << "your tea will include " << altMilk << " milk and " << sugarType << "sugar" <<endl;
     }else if (milk == true && sugar == false){
