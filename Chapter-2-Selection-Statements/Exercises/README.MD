@@ -39,6 +39,26 @@ You have been asked to write a simple question and answer programme. There is on
 - The user then types in an answer.
 - If the answer is correct, the programme should tell the user that their answer was correct.
 - If the answer is incorrect, the programme should tell the user that their answer was wrong.
+
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    string ans;
+
+    cout << "what is the capital of france? " <<endl;
+    cin >> ans
+
+    if (ans == "paris"){
+        cout << "correct" <<endl;
+    }else{
+        cout << "incorrect" <<endl;
+    }
+
+    return 0;
+}
+
 #### Advanced Requirements
 - What about capital letters? (e.g. paris vs Paris vs PaRis)
 - Add additional questions. (e.g. 10 Capitals Cities of Europe Quiz)
@@ -65,6 +85,27 @@ START
   ENDIF
 END
 ```
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+    double mondeyGot;
+    double moneyLeft;
+    double moneyNeeded;
+
+    cout << "how much money you got? " <<endl;
+    cin >> moneyGot;
+
+    if (money >= 25){
+        moneyLeft = moneyGot - 25;
+        cout << "you have " << moneyLeft << "remaining" <<endl;
+    }else{
+        moneyNeeded = 25 - moneyGot;
+        cout << "i need to save " << moneyNeeded <<endl;
+    }
+    return 0;
+}
 
 &nbsp;
 &nbsp;
@@ -82,6 +123,7 @@ if( first-condition && second-condition ){
        //output can't ride message
 }
 ```
+
 
 &nbsp;
 &nbsp;
