@@ -33,10 +33,10 @@ using namespace std;
 int main(){
     int num = 108; //declare and initalise variable
 
-    while(______){ //while conditional check
+    while(num > 0){ //while conditional check
         //code to output then decrease number
-        __________________________________
-        _____________
+        cout << num <<endl;
+        num = num - 9;
     }
     return 0;
 }
@@ -48,6 +48,23 @@ int main(){
 ### 2: Are you Gullible?
 
 Write a program that asks the user to enter any number other than and continues to do so until 5 is entered. If the user enters 5 display the message "Hey! you weren't supposed to enter 5!" and exit the program.
+
+```C++
+#include <iostream>
+using namespace std;
+
+int main(){
+    double num;
+    int five = 5;
+
+    while(num != five){
+        cout << "enter any number" <<endl;
+        cin >> num;
+    }
+    
+
+}
+```
 
 #### Advanced requirements
 
