@@ -2,8 +2,9 @@
 using namespace std;
 
 int main(){
-    for(int i = 0; i < 10; i++){
+    for(int i = 10; i > -1; i--){
         cout << "i is: " << i <<endl;
     }
-    return 0;
+    cout << "lift off" <<endl;
+    return 0; 
 }
