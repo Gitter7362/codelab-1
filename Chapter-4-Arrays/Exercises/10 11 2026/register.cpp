@@ -3,7 +3,7 @@
 using namespace std;
 
 int main(){
-    // int ppl;
+    // int const ppl;
     
     // cout << "how many people are in your class?" <<endl;
     // cin >> ppl;
@@ -15,7 +15,8 @@ int main(){
         cin >> reg[i];
     }
     for (int x = 0; x < 5; x++){
-        cout << reg[x] <<endl;
+        cout << x+1 << ": " << reg[x] <<endl;
     }
+    
     return 0;
 }
