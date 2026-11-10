@@ -3,17 +3,19 @@
 using namespace std;
 
 int main(){
-    int ppl;
-    string register[ppl] = {};
+    // int ppl;
+    
+    // cout << "how many people are in your class?" <<endl;
+    // cin >> ppl;
 
-    cout << "how many people are in your class?" <<endl;
-    cin >> ppl;
+    string reg[5];
 
-    for (int i = 0; i < ppl; i++){
+    for (int i = 0; i < 5; i++){
         cout << "enter the " << i+1 << " person in your class" <<endl;
-        cin >> register[i];
+        cin >> reg[i];
     }
-    cout << register <<endl;
-
+    for (int x = 0; x < 5; x++){
+        cout << reg[x] <<endl;
+    }
     return 0;
 }
