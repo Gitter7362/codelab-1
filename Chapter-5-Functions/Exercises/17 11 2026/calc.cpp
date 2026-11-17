@@ -70,8 +70,6 @@ void result(){
 }
 
 int main(){
-    // int num1;
-    // int num2;
 
     welcome();
     enterNum();
