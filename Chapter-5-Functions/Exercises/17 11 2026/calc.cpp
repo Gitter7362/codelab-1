@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //global variables for calculations
-int num1, num2, total;
+//int num1, num2, total;
  
  
 //declare functions here
@@ -22,7 +22,9 @@ int num1, num2, total;
 //     return 0;
 // }
 
-int num1(){
+int num11(){
+    int num1;
+
     cout << "Welcome to the calculator" << endl;
     cout << "---------------------" << endl;
     
@@ -33,7 +35,9 @@ int num1(){
 
     return num1;
 }
-int num2(){
+int num22(){
+    int num2;
+
     cout << "Please enter a number" << endl;
     cout << "---------------------" << endl;
 
@@ -53,9 +57,12 @@ int choice(){
 }
 
 int main() {
+    // int num1;
+    // int num2;
+    int total;
 
-    num1();
-    num2();
+    num11(num1);
+    num22(num2);
     choice();
 
     if(choice == 1){
@@ -71,8 +78,7 @@ int main() {
     cout << "Result" << endl;
     cout << "---------------------" << endl;
     cout << total << endl;
- 
- 
+
     return 0;
 }
  
