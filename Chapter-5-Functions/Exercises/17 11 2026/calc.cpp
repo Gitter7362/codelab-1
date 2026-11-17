@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //global variables for calculations
-int num1, num2, total;
+int num1, num2, total, choice;
  
  
 //declare functions here
@@ -41,12 +41,11 @@ void enterNum(){
 
 }  
 
-void choice(){
+void menuChoice(){
 
     cout << "What calculation do you want to perform" << endl;
     cout << "1: Addition \n2: Subtraction\n3: Division\n4: Multiplication" << endl;
     
-    int choice;
     cin >> choice;
 
 }
@@ -76,7 +75,7 @@ int main(){
 
     welcome();
     enterNum();
-    choice();
+    menuChoice();
     calc();
     result();    
 
