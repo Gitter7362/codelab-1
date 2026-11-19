@@ -22,13 +22,13 @@ int main(){
             cout << "this is fast broadband speed" <<endl;
             break;
         case 5:
-            cout << "this is very slow internet speed" <<endl;
+            cout << "this is very superfast speed" <<endl;
             break;
         case 6:
-            cout << "this is very slow internet speed" <<endl;
+            cout << "this is ultrafast speed" <<endl;
             break;
         case 7:
-            cout << "this is very slow internet speed" <<endl;
+            cout << "this is Gigabit+ speed" <<endl;
             break;
 
     }
