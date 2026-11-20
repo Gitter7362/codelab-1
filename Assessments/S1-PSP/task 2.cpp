@@ -20,14 +20,16 @@ int main(){
         if (paces[y] < 450){ //if statement for counting how man times jess was under 7 mins 30 secs
             count = count + 1;
         }
-        if (fastestTime > paces[y]){
+        if (fastestTime > paces[y]){ //including all in a loop this is for getting the fastest pace
             fastestTime = paces[y];
         }
     }
     averagePaceSecs = totalSecs;
-    averagePaceMins = averagePaceSecs / 60 / 7;
-   
-    averagePaceSecs = (averagePaceSecs / 60 / 7) - averagePaceMins;
+    averagePaceMins = averagePaceSecs / 60 / 7; 
+//getting the minutes, as its an integer it truncates the 
+//decimal and all i need is the minutes and dont need the decimal  
+
+    averagePaceSecs = (averagePaceSecs / 60 / 7) - averagePaceMins; //getting the seconds
     averagePaceSecs = averagePaceSecs * 60; //a way too complicated way of getting minutes and seconds
     //cout << averagePaceSecs <<endl;
     //cout << averagePaceMins <<endl;
