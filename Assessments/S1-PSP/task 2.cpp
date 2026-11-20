@@ -20,19 +20,16 @@ int main(){
     }
     averagePace = averagePace / 7; //calculating average of the whole weeks pace in seconds
     averagePace = averagePace / 60; //converting from seconds to minutes
-
-    // for (int z = 0; z < 7; z++){
-        
-    // }
-    cout << count <<endl;
     
     for (int w = 0; w < 7; w++){
         if (fastestTime > paces[w]){
             fastestTime = paces[w];
         }
     }
+
+    cout << "jess was under 7 mins and 30 secs " << count  << " times" <<endl;
     cout << "jess' fastest pace for the week was: " << fastestTime <<endl;
-    cout << averagePace <<endl; //an output to see things are working
+    //cout << "jess' average pace was: " << averagePaceMins << "minutes and " << averagePaceSecs << " seconds" <<endl; //an output to see things are working
 
     return 0;
 }
