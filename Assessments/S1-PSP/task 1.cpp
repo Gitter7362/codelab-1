@@ -11,7 +11,7 @@ int main(){
     while (cin.fail()) { //input validation from resources
         cout << "Invalid input" << endl;
         cin.clear(); //clear bad input flag
-        cin.ignore(8, '\n'); //ignore input
+        cin.ignore(1000, '\n'); //ignore input
         cin >> mbs; //get number again
     }
 
