@@ -5,6 +5,7 @@ using namespace std;
 int main(){
     double paces[7];//creating array for all pace times
     double averagePace; 
+    double fastestTime = 1000;//setting as very high so no matter the first pace, a new value will be set by the for function this variable is used in
     int count; //how many times jess got a pace below 7 mins 30 secs
 
     for (int x = 0; x < 7; x++){ //for loop the length of the array
@@ -19,12 +20,18 @@ int main(){
 
     for (int z = 0; z < 7; z++){
         if (paces[z] <= 450){
-            count++;
+            count = count + 1;
         }
     }
     cout << count <<endl;
-
-    cout << averagePace <<endl; //placeholder just as an output to see things are working
+    
+    for (int w = 0; w < 7; w++){
+        if (fastestTime < paces[w]){
+            fastestTime = paces[w];
+        }
+    }
+    cout << "jess' fastest pace for the week was: " << fastestTime <<endl;
+    cout << averagePace <<endl; //an output to see things are working
 
     return 0;
 }
