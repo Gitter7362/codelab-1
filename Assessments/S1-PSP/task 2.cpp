@@ -7,7 +7,7 @@ int main(){
     double averagePace;
 
     for (int x = 0; x < 7; x++){
-        cout << "enter the pace for day: " << x+1 <<endl;
+        cout << "enter the pace in seconds for day : " << x+1 <<endl;
         cin >> paces[x];
     }
     for (int y = 0; y < 8; y++){
@@ -17,4 +17,5 @@ int main(){
     averagePace = averagePace / 60;
     cout << averagePace <<endl;
 
+    return 0;
 }
