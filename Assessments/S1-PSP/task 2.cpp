@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     double paces[7];//creating array for all pace times
-    double averagePace; 
+    double averagePace = 0; 
     double fastestTime = 1000;//setting as very high so no matter the first pace, a new value will be set by the for function this variable is used in
     int count = 0; //how many times jess got a pace below 7 mins 30 secs
 
@@ -13,8 +13,8 @@ int main(){
         cin >> paces[x]; //storing inputs into the array
     }
     for (int y = 0; y < 7; y++){ //for loop the length of the array
-        averagePace = averagePace + paces[y]; //adding all values of array together
-        if (paces[y] <= 450){
+        averagePace += paces[y]; //adding all values of array together
+        if (paces[y] < 450){
             count = count + 1;
         }
     }
@@ -27,7 +27,7 @@ int main(){
     cout << count <<endl;
     
     for (int w = 0; w < 7; w++){
-        if (fastestTime < paces[w]){
+        if (fastestTime > paces[w]){
             fastestTime = paces[w];
         }
     }
