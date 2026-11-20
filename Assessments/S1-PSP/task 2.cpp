@@ -1,21 +1,21 @@
 #include <iostream>
-#include <string>
+#include <string> //always include these libraries incase thy are needed
 using namespace std;
 
 int main(){
-    double paces[7];
+    double paces[7];//creating array with an appropriate
     double averagePace;
 
-    for (int x = 0; x < 7; x++){
-        cout << "enter the pace in seconds for day : " << x+1 <<endl;
-        cin >> paces[x];
+    for (int x = 0; x < 7; x++){ //for loop the length of the array
+        cout << "enter the pace in seconds for day : " << x+1 <<endl; //asking for the pace of each day
+        cin >> paces[x]; //storing inputs into the array
     }
-    for (int y = 0; y < 7; y++){
-        averagePace = averagePace + paces[y];
+    for (int y = 0; y < 7; y++){ //for loop the length of the array
+        averagePace = averagePace + paces[y]; //adding all values of array together
     }
-    averagePace = averagePace / 7;
-    averagePace = averagePace / 60;
-    cout << averagePace <<endl;
+    averagePace = averagePace / 7; //calculating average of the whole weeks pace in seconds
+    averagePace = averagePace / 60; //converting from seconds to minutes
+    cout << averagePace <<endl; //placeholder just as an output to see things are working
 
     return 0;
 }
