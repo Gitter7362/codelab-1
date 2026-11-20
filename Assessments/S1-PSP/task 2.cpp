@@ -10,7 +10,7 @@ int main(){
         cout << "enter the pace in seconds for day : " << x+1 <<endl;
         cin >> paces[x];
     }
-    for (int y = 0; y < 8; y++){
+    for (int y = 0; y < 7; y++){
         averagePace = averagePace + paces[y];
     }
     averagePace = averagePace / 7;
