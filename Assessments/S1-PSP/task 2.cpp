@@ -6,7 +6,7 @@ int main(){
     double paces[7];//creating array for all pace times
     double averagePace; 
     double fastestTime = 1000;//setting as very high so no matter the first pace, a new value will be set by the for function this variable is used in
-    int count; //how many times jess got a pace below 7 mins 30 secs
+    int count = 0; //how many times jess got a pace below 7 mins 30 secs
 
     for (int x = 0; x < 7; x++){ //for loop the length of the array
         cout << "enter the pace in seconds for day : " << x+1 <<endl; //asking for the pace of each day
@@ -14,15 +14,16 @@ int main(){
     }
     for (int y = 0; y < 7; y++){ //for loop the length of the array
         averagePace = averagePace + paces[y]; //adding all values of array together
+        if (paces[y] <= 450){
+            count = count + 1;
+        }
     }
     averagePace = averagePace / 7; //calculating average of the whole weeks pace in seconds
     averagePace = averagePace / 60; //converting from seconds to minutes
 
-    for (int z = 0; z < 7; z++){
-        if (paces[z] <= 450){
-            count = count + 1;
-        }
-    }
+    // for (int z = 0; z < 7; z++){
+        
+    // }
     cout << count <<endl;
     
     for (int w = 0; w < 7; w++){
