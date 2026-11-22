@@ -29,17 +29,25 @@ void exit(){
 int main(){
     int choose;
 
+    while (viewMenu(choose) != 4){
                     //calling function so that choice can be used in the switch case statement
-    switch(viewMenu(choose)){ // wouldnt work calling the function outside the switch case statement
-        case 1:
-            break;
-        case 2:
-            cout << "stuff" <<endl;
-            break;
-        case 3: 
-            break;
-        case 4:
-            break;
+        switch(viewMenu(choose)){ // wouldnt work calling the function outside the switch case statement
+            case 1:
+                //earnPoints(int balance);
+                cout<<"me"<<endl;
+                break;
+            case 2:
+                cout<<"you"<<endl;
+                //redeemPoints();
+                //cout << "stuff" <<endl;
+                break;
+            case 3: 
+                cout<<"nsakjsd"<<endl;
+                displayPoints();
+                break;
+            case 4:
+                break;
+        }
     }
 
     return 0;
