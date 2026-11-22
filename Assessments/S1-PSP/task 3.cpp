@@ -5,7 +5,8 @@ using namespace std;
 int viewMenu(int choice){ //displaying menu to user
     cout << "1: earn points\n2: redeem points\n3: view points balance\n4: exit" <<endl;
     cin >> choice; //choice from the user 
-    return choice;
+    int choose = choice;
+    return choose; //returning value
 }
 
 int earnPoints(int balance){
@@ -28,12 +29,12 @@ void exit(){
 int main(){
     int choose;
 
-    viewMenu(choose); //calling function so that choice can be used in the switch case statement
-
-    switch(choose){
+                    //calling function so that choice can be used in the switch case statement
+    switch(viewMenu(choose)){ // wouldnt work calling the function outside the switch case statement
         case 1:
             break;
         case 2:
+            cout << "stuff" <<endl;
             break;
         case 3: 
             break;

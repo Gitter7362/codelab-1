@@ -123,6 +123,8 @@ The program should:
 - Allow the user to repeatedly display and select options from the menu until they choose to exit the program.
 - Display appropriate messages when points are earned, redeemed, or when the current balance is displayed.
 
+
+
 ### Key Concepts
 
 Functions, Iteration
