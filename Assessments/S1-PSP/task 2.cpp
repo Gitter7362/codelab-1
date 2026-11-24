@@ -4,7 +4,6 @@ using namespace std;
 
 int main(){
     double paces[7];//creating array for all pace times
-    //double averagePace = 0; 
     double fastestTime = 1000;//setting as very high so no matter the first pace, a new value will be set by the for function this variable is used in
     int count = 0; //how many times jess got a pace below 7 mins 30 secs
     double totalSecs = 0;
@@ -31,10 +30,6 @@ int main(){
 
     averagePaceSecs = (averagePaceSecs / 60 / 7) - averagePaceMins; //getting the seconds
     averagePaceSecs = averagePaceSecs * 60; //a way too complicated way of getting minutes and seconds
-    //cout << averagePaceSecs <<endl;
-    //cout << averagePaceMins <<endl;
-    //averagePace = totalSecs / 60; //calculating average of the whole weeks pace in seconds
-    //averagePace = averagePace / 7; //converting from seconds to minutes
 
     cout << "jess was under 7 mins and 30 secs " << count  << " times" <<endl;
     cout << "jess' fastest pace for the week was: " << fastestTime <<endl;
