@@ -10,8 +10,8 @@ int viewMenu(int choice){ //displaying menu to user
 }
 
 int earnPoints(int balance){
-    balance += 1; //starting reward points
-
+    int updatedBalance = balance + 1; //starting reward points
+    return updatedBalance;
 }
 
 int redeemPoints(){
@@ -33,12 +33,13 @@ int main(){
                     //calling function so that choice can be used in the switch case statement
         switch(viewMenu(choose)){ // wouldnt work calling the function outside the switch case statement
             case 1:
-                //earnPoints(int balance);
+                int userBalance;
+                earnPoints(userBalance);
                 cout<<"me"<<endl;
                 break;
             case 2:
                 cout<<"you"<<endl;
-                //redeemPoints();
+                redeemPoints();
                 //cout << "stuff" <<endl;
                 break;
             case 3: 
