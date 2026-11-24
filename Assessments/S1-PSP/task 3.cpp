@@ -15,8 +15,20 @@ int earnPoints(int balance){
     return updatedBalance;
 }
 
-int redeemPoints(){
-
+int redeemPoints(int balance, int redeemPoints){
+    cout << "enter how many points you would like to redeem" <<endl;
+    cin >> redeemPoints;
+    
+    //input validtion vv
+    while (cin.fail()) {
+    cout << "Invalid input" << endl;
+    cin.clear(); //clear bad input flag
+    cin.ignore(1000, '\n'); //ignore input
+    cin >> redeemPoints; //get number again
+    }//this chunk of code ^^^^ was taken from from resources
+    
+    cout << "Input number: " << redeemPoints << endl;
+    //int updatedBalance = balance - 1
 }
 
 void displayPoints(){
