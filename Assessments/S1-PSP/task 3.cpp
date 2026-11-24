@@ -10,6 +10,7 @@ int viewMenu(int choice){ //displaying menu to user
 }
 
 int earnPoints(int balance){
+    balance = 0;
     int updatedBalance = balance + 1; //starting reward points
     return updatedBalance;
 }
