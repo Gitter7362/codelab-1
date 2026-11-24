@@ -15,7 +15,7 @@ int earnPoints(int balance){
     return updatedBalance;
 }
 
-int redeemPoints(int balance, int redeemPoints){
+int redeemPoints(int balance, int updatedBalance, int redeemPoints){
     cout << "enter how many points you would like to redeem" <<endl;
     cin >> redeemPoints;
 
@@ -28,12 +28,13 @@ int redeemPoints(int balance, int redeemPoints){
     }//this chunk of code ^^^^ was taken from from resources
     
     if (balance >= redeemPoints){
-        balance = balance - redeemPoints;
+        updatedBalance = balance - redeemPoints;
     }else{
         cout << "you don't have enough points in your balance to redeem: " << redeemPoints << "points" <<endl;
     }
 
-    cout << "Input number: " << redeemPoints << endl;
+    return updatedBalance;
+    //cout << "Input number: " << redeemPoints << endl;
     //int updatedBalance = balance - 1
 }
 
